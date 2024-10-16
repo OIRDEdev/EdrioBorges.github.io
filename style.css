@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: bisque;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+*{
+    scrollbar-color: transparent transparent;
+}
+
+.container-geral{
+    display: grid;
+    grid-template-columns: minmax(14rem, 30%) 1fr;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.side-bar{
+    background-color: rgb(228, 196, 158);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container{
+    background-color: bisque;
+    margin: 10px;
+}
+
+/*IMG SIDE BAR*/
+
+.imgcontainer{
+    max-height: 322px;
+    margin-bottom: 5px;
+}
+
+.imgcontainer img{
+    border-radius: 50%;
+    height: 100%;
+}
+
+/*FIM IMG SIDE BAR*/
+
+/*INTRO SIDE BAR*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 300px;
+    justify-content: center;
+}
+.intro h3{
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 40px;
+}
+.intro p{
+    font-size: 30px;
+    margin-right: 20px;
+    margin: 0;
+    padding: 0;
+}
+/*FIM INTRO SIDE BAR*/
+
+/*PROEF SIDE BAR*/
+
+.proeficiencia{
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+
+    flex-direction: column;
+}
+
+.proeficiencia h3{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.proeficiencia p{
+    margin-top: 0;
+    margin-right: 22px;
+    font-size: 20px;
+}
+
+/*FIM PROEF SIDE BAR*/
+
+/* INTRODUÇÃO */
+.name_icons{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-bottom: 85px;
+}
+
+.name{
+    margin: 50px;
+}
+.name h1{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.name h2{
+    margin: 1px;
+}
+
+.name p{
+    margin: 0;
+}
+
+.logos{
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo_item{
+    width: auto;
+    height: 40px;
+    padding: 3px;   
+    cursor: pointer;
+}
+
+/* FIM INTRODUÇÃO*/
+
+/*INTRO CONTAINER*/
+
+.intro-container{
+    display: flex;
+    flex-direction: column;
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contato-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mim{
+    margin: 15px;
+}
+.texto-sobre{
+    font-size: 25px;
+}
+
+/*FIM INTRO CONTAINER*/
+
+/*PROEFICIENCIAS*/
+.Proef-container{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.titulo-proef{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.proeficeencias-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.itemgrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.progress-bar{
+    height: 25px;
+    border-radius: 8px;
+    color: black;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.html{}
+.css{}
+.javascript{ }
+
+
+/*FIM PROENFICIENCIAS*/
