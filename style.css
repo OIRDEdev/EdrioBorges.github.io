@@ -20,7 +20,7 @@ body{
 
 .container-geral{
     display: grid;
-    grid-template-columns: minmax(14rem, 30%) 1fr;
+    grid-template-columns: minmax(14rem, 25px) 1fr;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -106,7 +106,7 @@ body{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
-    padding-bottom: 85px;
+    padding-bottom: 20px;
 }
 
 .name{
@@ -130,6 +130,7 @@ body{
 .logos{
     display: flex;
     align-items: flex-end;
+    margin-right: 20px;
 }
 
 .logo_item{
@@ -137,6 +138,14 @@ body{
     height: 40px;
     padding: 3px;   
     cursor: pointer;
+}
+
+.imgcontainer-main{
+    display: none;
+}
+
+.name-info-intro{
+    display: contents;
 }
 
 /* FIM INTRODUÇÃO*/
@@ -176,7 +185,7 @@ body{
 
 .titulo-proef{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
@@ -204,3 +213,55 @@ body{
 
 /*FIM PROENFICIENCIAS*/
 
+/* RESPONSIVIDADE*/
+
+@media (max-width: 900px) {
+
+    .container-geral{
+        display: flex;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-bar{
+        display: none;
+    }
+
+    .imgcontainer-main, .titulo-proef{
+        display: block;
+    }
+
+    .imgcontainer-main img{
+        border-radius: 50%;
+        height: auto;
+        width: 100%;
+        max-width: 263px;
+        max-height: 266px;
+    }
+
+    .name_icons{
+        display: grid;
+        gap: 20px;
+        padding-bottom: 0;
+    }
+    .name-info-intro{
+        display: flex;
+        justify-content: space-between;
+        width: 95vw;
+    }
+
+    .name{
+        font-size: xx-large;
+        margin: 0;
+    }
+    .name h2 {
+        font-size: medium;
+    }
+
+    .logos{
+        margin-right: 0;
+    }
+}
