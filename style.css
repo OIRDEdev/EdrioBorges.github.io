@@ -20,7 +20,7 @@ body{
 
 .container-geral{
     display: grid;
-    grid-template-columns: minmax(14rem, 25px) 1fr;
+    grid-template-columns: minmax(14rem, 25%) 1fr;
     margin: 0;
     padding: 0;
     height: 100vh;
