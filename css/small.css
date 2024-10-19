@@ -3,6 +3,7 @@
     *{
         font-size: small;
     }
+    
 
     .name{
         font-size: x-large;
@@ -15,13 +16,26 @@
 
     .main-container{
         margin: 0;
-        max-width: 320px;
     }
 
     .imgcontainer-main{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgcontainer-main img{
         width: 200px;
     }
 
+    .logo_item{
+        height: 25px;
+    }
    
-    
+    .contato{
+        flex-direction: column;
+    }
+    .contato-item{
+        padding: 2px;
+    }
 }
