@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -6,274 +6,233 @@ body{
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
-*{
+* {
     scrollbar-color: transparent transparent;
 }
 
-.container-geral{
+.container-geral {
     display: grid;
     grid-template-columns: minmax(14rem, 25%) 1fr;
-    margin: 0;
-    padding: 0;
     height: 100vh;
 }
-.side-bar{
+
+.side-bar {
     background-color: rgb(228, 196, 158);
     display: grid;
     grid-template-rows: 300px;
 }
 
-.main-container{
+.main-container {
     background-color: bisque;
     margin: 10px;
     display: grid;
     grid-template-rows: 300px;
 }
 
-/*IMG SIDE BAR*/
-
-.imgcontainer{
+/* Imagem na sidebar */
+.imgcontainer {
     max-height: 322px;
     margin-bottom: 5px;
 }
 
-.imgcontainer img{
+.imgcontainer img {
     border-radius: 50%;
-    height: auto;
     width: 100%;
     max-width: 322px;
     max-height: 322px;
 }
 
-/*FIM IMG SIDE BAR*/
-
-/*INTRO SIDE BAR*/
-.intro {
+/* Introdução na sidebar */
+.intro, .proeficiencia, .Exp-side-bar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-end;
     height: 300px;
-    justify-content: center;
 }
-.intro h3{
-    margin: 0;
+
+.intro h3, .proeficiencia h3, .Exp-side-bar h3 {
+    margin: 0 20px 0 0;
     padding: 0;
-    margin-right: 20px;
-    font-size: 40px;
-}
-.intro p{
     font-size: 30px;
-    margin-right: 20px;
-    margin: 0;
+}
+
+.intro p, .proeficiencia p, .Exp-side-bar p {
+    font-size: 30px;
+    margin: 0 20px 0 0;
     padding: 0;
 }
-/*FIM INTRO SIDE BAR*/
 
-/*PROEF SIDE BAR*/
-
-.proeficiencia{
-    display: flex;
-    align-items: flex-end;
-    height: 300px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.proeficiencia h3{
-    font-size: 25px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    padding: 0;
-}
-.proeficiencia p{
-    margin-top: 0;
-    margin-right: 22px;
-    font-size: 20px;
-}
-
-/*FIM PROEF SIDE BAR*/
-
-/*exp side bar*/
-.Exp-side-bar{
-    display: flex;
-    align-items: flex-end;
-    height: 300px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.Exp-side-bar h3{
-    font-size: 25px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    padding: 0;
-}
-.Exp-side-bar p{
-    margin-top: 0;
-    margin-right: 22px;
-    font-size: 20px;
-}
-
-/*fim exp side bar*/
-
-/* INTRODUÇÃO */
-.name_icons{
+/* Nome e ícones */
+.name_icons {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid;
     padding-bottom: 20px;
 }
 
-.name{
+.name {
     margin: 50px;
 }
-.name h1{
+
+.name h1 {
     font-size: 50px;
     margin: 0;
     padding: 0;
-
 }
 
-.name h2{
-    margin: 1px;
-}
-
-.name p{
+.name h2, .name p {
     margin: 0;
 }
 
-.logos{
+.logos {
     display: flex;
     align-items: flex-end;
     margin-right: 20px;
 }
 
-.logo_item{
-    width: auto;
+.logo_item {
     height: 40px;
     padding: 3px;   
     cursor: pointer;
 }
 
-.imgcontainer-main{
+.imgcontainer-main {
     display: none;
 }
 
-.name-info-intro{
+.name-info-intro {
     display: contents;
 }
 
-/* FIM INTRODUÇÃO*/
-
-/*INTRO CONTAINER*/
-
-.intro-container{
+/* Introdução */
+.intro-container {
     display: flex;
     flex-direction: column;
 }
-.contato{
+
+.contato {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
-.contato-item{
+.contato-item {
     display: flex;
     flex-direction: column;
 }
 
-.sobre-mim{
+.sobre-mim {
     margin: 15px;
 }
-.texto-sobre{
+
+.texto-sobre {
     font-size: 25px;
 }
 
-/*FIM INTRO CONTAINER*/
-
-/*PROEFICIENCIAS*/
-.Proef-container{
+/* Proeficiências */
+.Proef-container {
     display: flex;
     flex-direction: column;
     height: 300px;
 }
 
-.titulo-proef{
-    width: 100%;
-    display: none;
-    justify-content: center;
-}
-
-.proeficeencias-intro{
+.proeficeencias-intro {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     height: 100%;
 }
 
-.itemgrid{
+.itemgrid {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.progress-bar{
+.progress-bar {
+    position: relative;
     height: 25px;
+    background-color: #e0e0e0;
     border-radius: 8px;
-    color: black;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar::before {
+    content: attr(data-skill);
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 8px 0 0 8px;
+    transition: width 0.3s ease-in-out;
+    color: white;
     line-height: 25px;
     text-align: center;
     padding: 0 10px;
+
 }
 
-/*FIM PROENFICIENCIAS*/
 
-/*experiencia*/
-.nameEXP{
-    display: none;
+.html .progress-bar::before {
+    width: 60%; 
 }
 
-.container-exp{
+.css .progress-bar::before {
+    width: 40%; 
+}
+
+.javascript .progress-bar::before {
+    width: 30%; 
+}
+
+.nodeJs .progress-bar::before {
+    width: 10%;
+}
+
+.python .progress-bar::before {
+    width: 50%; 
+}
+
+.Java .progress-bar::before {
+    width: 5%; 
+}
+
+/* Experiência */
+.container-exp {
     display: flex;
-    flex-direction: row; 
     justify-content: space-between;
-    margin: 0;
     padding: 10px;
 }
-.Experience-container{
-    display: flex;
-    flex-direction: column; 
-    margin: 0;
-    padding: 10px;
 
-}
-
-.experiencia{
+.Experience-container {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column;
     box-shadow: -7px -4px 7px 2px rgba(55, 137, 95, 0.5);
     max-width: 40%;
 }
 
-.NameExp{
+.NameExp {
     background-color: rgb(19, 39, 31);
     padding: 10px;
     font-size: xx-large;
     color: white;
 }
 
-.infoexp{
+.infoexp {
     font-size: larger;
     padding: 10px;
 }
-/*fim experiencia*/

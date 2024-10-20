@@ -15,7 +15,10 @@
     }
     
     .imgcontainer-main, .titulo-proef{
-        display: block;
+        display: flex;
+    }
+    .titulo-proef{
+        justify-content: center;
     }
 
     .imgcontainer-main img{
