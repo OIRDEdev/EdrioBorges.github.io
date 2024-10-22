@@ -70,4 +70,11 @@
         max-width: 100%;
     }
 
+    .projects {
+        flex-direction: column;
+    }
+    .container-project{
+        max-width: 100%;
+    }
+
 }

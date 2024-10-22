@@ -10,7 +10,7 @@
 </head>
 <body>
     <section class="container-geral">
-        <div class="side-bar">
+        <section class="side-bar">
             <div class="imgcontainer">
                 <img src="file.enc" alt="imagem_perfil">
             </div>
@@ -32,9 +32,16 @@
                     <p>Trajeto Profissional</p>
                 </div>
             </div>
-        </div>
 
-        <div class="main-container">
+            <div class="projetos-side-bar">
+                <div class="projetos">
+                    <h3>Projetos</h3>
+                    <p>Projetos pessoais</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-container">
             <div class="name_icons">
                 <div class="imgcontainer-main">
                     <img src="file.enc" alt="imagem_perfil">
@@ -52,15 +59,17 @@
     
                     
                     <div class="logos">
-                        <img src="clipart256843.png" alt="myinstragram" class="logo_item"">
-                        <img src="clipart1654354.png" alt="MYgit" class="logo_item"">
-                        <img src="clipart62202.png" alt="MYlinkedin" class="logo_item">
+                        <img src="./logos/clipart256843.png" alt="myinstragram" class="logo_item"">
+                        <a href="https://github.com/OIRDEdev">
+                            <img src="./logos/clipart1654354.png" alt="MYgit" class="logo_item"">
+                        </a>
+                        <img src="./logos/clipart62202.png" alt="MYlinkedin" class="logo_item">
                     </div>
                 </div>
 
             </div>
 
-            <div class="intro-container">
+            <section class="intro-container">
                 <div class="contato">
                     <div class="contato-item">
                         <span>Localização:</span>
@@ -97,9 +106,9 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
 
-            <div class="Proef-container">
+            <section class="Proef-container">
                 <div class="titulo-proef">
                     <h3>Minhas Proêficiencias</h3>
                 </div>
@@ -133,9 +142,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="Experience-container">
+            <article class="Experience-container">
                 <div class="nameEXP">
                     <h2>Experiência</h2>
                 </div>
@@ -165,8 +174,37 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+
+            <article class="projects">
+                <div class="container-project">
+                    <a href="http://link-projeto" class="card">
+                        <div class="img-project-fukusawa"></div>
+                        <div class="descricao-project">
+                            <h3>Galeria de imagens</h3>
+                            <p>Desenvolvi uma galeria de imagens responsiva utilizando HTML, CSS e JavaScript. 
+                                O projeto permite aos usuários explorar e visualizar uma coleção diversificada de fotos de alta qualidade,
+                                com funcionalidades de filtro e busca
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container-project">
+                    <a href="http://link-projeto" class="card">
+                        <div class="img-project-ingles"></div>
+                        <div class="descricao-project">
+                            <h3>English HUB</h3>
+                            <p>Desenvolvi um site interativo para o aprendizado de inglês, utilizando HTML, CSS e JavaScript.
+                                O projeto oferece recursos como lições, quizzes e exercícios de gramática, 
+                                proporcionando uma experiência de aprendizado envolvente.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+            </article>
+        </section>
     </section>
     
     <script src="index.js"></script>
